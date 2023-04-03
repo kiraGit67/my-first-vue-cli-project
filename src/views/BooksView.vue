@@ -1,5 +1,5 @@
 <template>
-  <base-list
+  <book-list
     headline="List of All Books"
     paragraph="A list of all the Books from the API"
     :listItems="books"
@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import BaseList from "@/components/BaseList.vue";
+import BookList from "@/components/BookList.vue";
 
 export default {
   components: {
-    BaseList,
+    BookList,
   },
   data() {
     return {
