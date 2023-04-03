@@ -7,9 +7,11 @@
       :key="listItem.id"
       :brand="listItem.brand"
       :type="listItem.type"
+      :baujahr="listItem.baujahr"
       :ps="listItem.ps"
       :km="listItem.km"
       :color="listItem.color"
+      :colors="listItem.colors"
       :price="listItem.price"
     />
   </ul>
@@ -28,3 +30,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+</style>
