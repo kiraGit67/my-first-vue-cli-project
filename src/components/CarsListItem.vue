@@ -7,9 +7,15 @@
       Baujahr {{ baujahr }} | Kilometer-Stand: {{ km }} | {{ ps }} PS | Preis
       {{ price }}
     </p>
-    <ul class="colors">
+    <ul class="color-objects">
       Erhältlich in den Farben
-      <li v-for="colour of colors" :key="colour">{{ colour }}</li>
+      <li
+        v-for="colorObject of colorObjects"
+        :key="colorObject"
+        :style="{ borderColor: colorObject.hex }"
+      >
+        {{ colorObject.name }}
+      </li>
     </ul>
   </li>
 </template>
@@ -25,6 +31,7 @@ export default {
     km: Number,
     color: String,
     colors: Array,
+    colorObjects: Array,
     price: String,
   },
 };
@@ -47,7 +54,8 @@ li > h1 > span {
   color: darkcyan;
 }
 
-ul.colors {
+ul.colors,
+ul.color-objects {
   list-style-type: none;
   padding-left: 0;
   display: flex;
@@ -60,5 +68,13 @@ ul.colors li {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
+}
+
+ul.color-objects li {
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 0.5rem;
+  border: none;
+  border-left: 1.25rem solid;
 }
 </style>
