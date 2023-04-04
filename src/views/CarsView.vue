@@ -25,6 +25,24 @@ export default {
           km: 9000,
           color: "silbergrau",
           colors: ["silbergrau", "anthrazit", "ziegelrot", "preußisch-blau"],
+          colorObjects: [
+            {
+              name: "silbergrau",
+              hex: "#efefef",
+            },
+            {
+              name: "anthrazit",
+              hex: "#333333",
+            },
+            {
+              name: "ziegelrot",
+              hex: "#660000",
+            },
+            {
+              name: "preußisch-blau",
+              hex: "#0033cc",
+            },
+          ],
           price: "€ 11.499",
         },
         {
@@ -36,6 +54,24 @@ export default {
           km: 7500,
           color: "rauchblau",
           colors: ["silbergrau", "goldbraun", "signalrot", "rauchblau"],
+          colorObjects: [
+            {
+              name: "silbergrau",
+              hex: "#efefef",
+            },
+            {
+              name: "goldbraun",
+              hex: "#ffcc33",
+            },
+            {
+              name: "signalrot",
+              hex: "#ff0000",
+            },
+            {
+              name: "rauchblau",
+              hex: "#6666cc",
+            },
+          ],
           price: "€ 13.899",
         },
         {
@@ -47,6 +83,24 @@ export default {
           km: 5750,
           color: "schwarz",
           colors: ["silbergrau", "schwarz", "signalrot", "weiß"],
+          colorObjects: [
+            {
+              name: "silbergrau",
+              hex: "#efefef",
+            },
+            {
+              name: "schwarz",
+              hex: "#000000",
+            },
+            {
+              name: "signalrot",
+              hex: "#ff0000",
+            },
+            {
+              name: "weiß",
+              hex: "#ffffff",
+            },
+          ],
           price: "€ 28.699",
         },
         {
@@ -63,6 +117,28 @@ export default {
             "tizianrot",
             "royalblau",
             "nachtblau",
+          ],
+          colorObjects: [
+            {
+              name: "silbergrau",
+              hex: "#efefef",
+            },
+            {
+              name: "türkisgrün",
+              hex: "#00cc99",
+            },
+            {
+              name: "tizianrot",
+              hex: "#990021",
+            },
+            {
+              name: "royalblau",
+              hex: "#0012ff",
+            },
+            {
+              name: "nachtblau",
+              hex: "#000043",
+            },
           ],
           price: "€ 12.699",
         },
@@ -81,6 +157,28 @@ export default {
             "sonnengelb",
             "lindgrün",
             "royalblau",
+          ],
+          colorObjects: [
+            {
+              name: "silbergrau",
+              hex: "#efefef",
+            },
+            {
+              name: "goldgelb",
+              hex: "#ffcc00",
+            },
+            {
+              name: "signalrot",
+              hex: "#ff0000",
+            },
+            {
+              name: "sonnengelb",
+              hex: "#ffab00",
+            },
+            {
+              name: "lindgrün",
+              hex: "#33ff33",
+            },
           ],
           price: "€ 10.599",
         },
