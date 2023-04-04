@@ -12,6 +12,7 @@
       :km="listItem.km"
       :color="listItem.color"
       :colors="listItem.colors"
+      :colorObjects="listItem.colorObjects"
       :price="listItem.price"
     />
   </ul>
