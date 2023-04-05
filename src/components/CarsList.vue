@@ -15,6 +15,7 @@
       :colors="listItem.colors"
       :colorObjects="listItem.colorObjects"
       :price="listItem.price"
+      :routerLink="{ name: 'carsDetail', params: { id: listItem.id } }"
     />
   </ul>
 </template>
