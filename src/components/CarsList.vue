@@ -5,6 +5,7 @@
     <cars-list-item
       v-for="listItem in listItems"
       :key="listItem.id"
+      :imgSource="listItem.img"
       :brand="listItem.brand"
       :type="listItem.type"
       :baujahr="listItem.baujahr"
