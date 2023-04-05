@@ -37,11 +37,11 @@ export default {
             },
             {
               name: "ziegelrot",
-              hex: "#660000",
+              hex: "#cc4300",
             },
             {
               name: "preußisch-blau",
-              hex: "#0033cc",
+              hex: "#003366",
             },
           ],
           price: "€ 11.499",
@@ -63,7 +63,7 @@ export default {
             },
             {
               name: "goldbraun",
-              hex: "#ffcc33",
+              hex: "#ba8921",
             },
             {
               name: "signalrot",
@@ -71,7 +71,7 @@ export default {
             },
             {
               name: "rauchblau",
-              hex: "#6666cc",
+              hex: "#666699",
             },
           ],
           price: "€ 13.899",
@@ -178,11 +178,11 @@ export default {
             },
             {
               name: "sonnengelb",
-              hex: "#ffab00",
+              hex: "#ffde00",
             },
             {
               name: "lindgrün",
-              hex: "#33ff33",
+              hex: "#cdff9c",
             },
           ],
           price: "€ 10.599",
