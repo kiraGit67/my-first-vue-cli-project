@@ -1,22 +1,27 @@
 <template>
   <li>
-    <h1>
-      {{ brand }} <span>{{ type }}</span>
-    </h1>
-    <p>
-      Baujahr {{ baujahr }} | Kilometer-Stand: {{ km }} | {{ ps }} PS | Preis
-      {{ price }}
-    </p>
-    <ul class="color-objects">
-      Erhältlich in den Farben
-      <li
-        v-for="colorObject of colorObjects"
-        :key="colorObject"
-        :style="{ borderColor: colorObject.hex }"
-      >
-        {{ colorObject.name }}
-      </li>
-    </ul>
+    <div class="image-box">
+      <img :src="imgSource" :alt="brand + ' ' + type" />
+    </div>
+    <div class="text-box">
+      <h1>
+        {{ brand }} <span>{{ type }}</span>
+      </h1>
+      <p>
+        Baujahr {{ baujahr }} | Kilometer-Stand: {{ km }} | {{ ps }} PS | Preis
+        {{ price }}
+      </p>
+      <p><strong>Erhältlich in den Farben</strong></p>
+      <ul class="color-objects">
+        <li
+          v-for="colorObject of colorObjects"
+          :key="colorObject"
+          :style="{ borderColor: colorObject.hex }"
+        >
+          {{ colorObject.name }}
+        </li>
+      </ul>
+    </div>
   </li>
 </template>
 
@@ -24,6 +29,7 @@
 export default {
   props: {
     id: String,
+    imgSource: String,
     brand: String,
     type: String,
     baujahr: Number,
@@ -44,12 +50,12 @@ li {
   border-bottom: 1px solid darkcyan;
 }
 
-li > h1 {
+li h1 {
   font-weight: normal;
   color: #42cd78;
 }
 
-li > h1 > span {
+li h1 > span {
   font-size: 80%;
   color: darkcyan;
 }
@@ -76,5 +82,17 @@ ul.color-objects li {
   padding-left: 0.5rem;
   border: none;
   border-left: 1.25rem solid;
+}
+
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  li:not(ul.color-objects li) {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2.5rem;
+  }
 }
 </style>
