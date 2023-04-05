@@ -12,6 +12,7 @@
         {{ numPages }} Seiten |
         {{ price }}
       </p>
+      <router-link :to="routeLink">Details</router-link>
     </div>
   </li>
 </template>
@@ -28,6 +29,7 @@ export default {
     isbn: String,
     numPages: Number,
     price: String,
+    routeLink: String,
   },
 };
 </script>
@@ -45,6 +47,19 @@ li > .details > h2 {
 li > .details > h3 {
   font-weight: normal;
   color: darkcyan;
+}
+li .details a {
+  text-decoration: none;
+  color: darkcyan;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid darkcyan;
+}
+li .details a:hover {
+  color: white;
+  background-color: #42cc78;
+  border-color: #42cc78;
 }
 @media screen and (min-width: 768px) {
   li {
