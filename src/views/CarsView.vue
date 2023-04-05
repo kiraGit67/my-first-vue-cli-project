@@ -18,6 +18,7 @@ export default {
       cars: [
         {
           id: "001",
+          img: "https://i.ebayimg.com/images/g/hcQAAOSw8gBeg4h9/s-l500.jpg",
           brand: "VW",
           type: "Polo",
           baujahr: 2001,
@@ -47,6 +48,7 @@ export default {
         },
         {
           id: "002",
+          img: "https://i.ebayimg.com/images/g/SqIAAOSwXepeh3kE/s-l500.jpg",
           brand: "VW",
           type: "Golf",
           baujahr: 2011,
@@ -76,6 +78,7 @@ export default {
         },
         {
           id: "003",
+          img: "https://i.ebayimg.com/images/g/DAYAAOSwvNhhnPFo/s-l500.jpg",
           brand: "Audi",
           type: "Quattro",
           baujahr: 1999,
@@ -105,6 +108,7 @@ export default {
         },
         {
           id: "004",
+          img: "https://i.ebayimg.com/images/g/XRYAAOSwRCJdkeb3/s-l500.jpg",
           brand: "Renault",
           type: "Modus",
           baujahr: 2012,
@@ -144,6 +148,7 @@ export default {
         },
         {
           id: "014",
+          img: "https://m.media-amazon.com/images/I/71mE360jkKL._AC_SX450_.jpg",
           brand: "Renault",
           type: "Twingo",
           baujahr: 2009,
