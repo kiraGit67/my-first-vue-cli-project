@@ -13,6 +13,7 @@
       :publisher="listItem.publisher"
       :isbn="listItem.isbn"
       :numPages="listItem.numPages"
+      :routeLink="{ name: 'booksDetail', params: { id: listItem.isbn } }"
     />
   </ul>
 </template>
