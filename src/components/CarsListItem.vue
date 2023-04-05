@@ -21,6 +21,7 @@
           {{ colorObject.name }}
         </li>
       </ul>
+      <router-link :to="routerLink">Details</router-link>
     </div>
   </li>
 </template>
@@ -39,6 +40,7 @@ export default {
     colors: Array,
     colorObjects: Array,
     price: String,
+    routerLink: String,
   },
 };
 </script>
@@ -86,6 +88,20 @@ ul.color-objects li {
 
 img {
   width: 100%;
+}
+
+.text-box a {
+  text-decoration: none;
+  font-size: 1.35rem;
+  color: #42cd78;
+  border: 2px solid #42cd78;
+  border-radius: 50px;
+  padding: 0.25rem 1rem;
+}
+
+.text-box a:hover {
+  background-color: #42cd78;
+  color: white;
 }
 
 @media screen and (min-width: 768px) {
